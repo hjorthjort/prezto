@@ -14,3 +14,7 @@ fi
 if [[ -s "${ZDOTDIR:-$HOME}/.aliases" ]]; then
   source "${ZDOTDIR:-$HOME}/.aliases"
 fi
+
+# Source nvm stuff, so that we can use iojs properly
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
