@@ -1,4 +1,3 @@
-#
 # Executes commands at login pre-zshrc.
 #
 # Authors:
@@ -8,6 +7,9 @@
 #
 # Browser
 #
+
+# For using homebrewed php
+export PATH=/usr/local/opt/php56/bin/:$PATH
 
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
