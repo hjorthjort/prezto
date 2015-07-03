@@ -18,3 +18,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.aliases" ]]; then
   source "${ZDOTDIR:-$HOME}/.aliases"
 fi
 
+#Set unlimited history
+export HISTFILESIZE=
+export HISTTIMEFORMAT="[%F %T] "
