@@ -12,7 +12,7 @@
 export PATH=/usr/local/opt/php56/bin/:$PATH
 
 # For using my own scripts
-export PATH=~/Code/Scripts/C:$PATH
+export PATH=~/Code/Scripts/bin:$PATH
 
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
