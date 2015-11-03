@@ -25,3 +25,6 @@ fi
 #Set unlimited history
 export HISTFILESIZE=
 export HISTTIMEFORMAT="[%F %T] "
+
+#Plugins
+plugins=(fasd colored-man sudo git)
