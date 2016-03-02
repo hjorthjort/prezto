@@ -8,6 +8,9 @@
 # Make MacVim default editor
 export EDITOR=mvim && export VISUAL=mvim
 
+# Define where configs folder is
+export CONFIGS=~/Code/configs
+
 # gitinspector fix: provide locale
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
