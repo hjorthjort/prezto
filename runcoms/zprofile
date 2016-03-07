@@ -8,8 +8,8 @@
 # Browser
 #
 
-# For using homebrewed php
-export PATH=/usr/local/bin/:$PATH
+# Give my personally installed programs the highest priority
+export PATH=/usr/local/bin:$PATH
 
 # For using my own scripts
 export PATH=~/Code/Scripts/bin:$PATH
