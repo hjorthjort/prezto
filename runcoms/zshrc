@@ -5,9 +5,6 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# Make MacVim default editor
-export EDITOR=mvim && export VISUAL=mvim
-
 # Define where configs folder is
 export CONFIGS=~/Code/configs
 
