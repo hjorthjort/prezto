@@ -29,14 +29,4 @@ export HISTTIMEFORMAT="[%F %T] "
 #Plugins
 plugins=(fasd colored-man sudo git)
 
-go()
-{
-if [ -f "$1" ]
-then
-    $EDITOR "$1"
-else
-    cd "$1" && ls
-fi
-}
-
 archey
