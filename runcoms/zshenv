@@ -11,11 +11,22 @@ if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-fpath=(~/.zsh/completion $fpath)
+#
+# Path
+#
+export PATH=$HOME/depot_tools:$HOME/Code/Scripts/bin:/usr/local/bin:$PATH
 
-# Define where configs folder is
-export CONFIGS=~/Code/configs
+# Allow completion
+fpath=(~/.zsh/completion $fpath)
 
 # gitinspector fix: provide locale
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+#
+# Editors
+#
+
+export EDITOR='mvim'
+export VISUAL='mvim'
+export PAGER='less'

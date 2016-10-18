@@ -4,30 +4,16 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Define where configs folder is
+export CONFIGS=~/Code/configs
+
 #
 # Browser
 #
 
-# Give my personally installed programs the highest priority
-export PATH=/usr/local/bin:$PATH
-
-# For using my own scripts
-export PATH=$HOME/Code/Scripts/bin:$PATH
-
-# For using Chromium depot tools
-export PATH=$HOME/depot_tools:$PATH
-
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
 fi
-
-#
-# Editors
-#
-
-export EDITOR='mvim'
-export VISUAL='mvim'
-export PAGER='less'
 
 #
 # Language
