@@ -5,13 +5,6 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# Define where configs folder is
-export CONFIGS=~/Code/configs
-
-# gitinspector fix: provide locale
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"

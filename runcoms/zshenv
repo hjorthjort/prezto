@@ -3,10 +3,19 @@
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Rikard Hjort <hjort@hjorthjort.com>
 #
 
 # Ensure that a non-login, non-interactive shell has a defined environment.
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
 fpath=(~/.zsh/completion $fpath)
+
+# Define where configs folder is
+export CONFIGS=~/Code/configs
+
+# gitinspector fix: provide locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
