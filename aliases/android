@@ -1,0 +1,2 @@
+alias android-app='adb shell am start -n'
+alias android-sunshine='adb shell am start -n com.example.android.sunshine.app/.MainActivity'

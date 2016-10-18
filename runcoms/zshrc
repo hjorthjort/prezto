@@ -11,9 +11,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Source aliases
-if [[ -s "${ZDOTDIR:-$HOME}/.aliases" ]]; then
-  source "${ZDOTDIR:-$HOME}/.aliases"
-fi
+for file in "${ZDOTDIR:-$HOME}/.zprezto/aliases/"* ; do
+  source "$file"
+done
 
 #Set unlimited history
 export HISTFILESIZE=

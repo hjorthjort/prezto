@@ -1,0 +1,3 @@
+#gitinspector
+alias gspec='~/Code/gitinspector/gitinspector/gitinspector.py'
+alias gspec-report='~/Code/gitinspector/gitinspector/gitinspector.py -F html . > report.html '

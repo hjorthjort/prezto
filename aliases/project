@@ -1,0 +1,5 @@
+alias poet='cd ~/Code/poet'
+alias caps='cd /Code/CapStat'
+alias conf='cd Code/configs'
+alias www='cd ~/Sites'
+
