@@ -14,7 +14,7 @@ fi
 #
 # Path
 #
-export PATH=$HOME/depot_tools:$HOME/Code/Scripts/bin:/usr/local/bin:$PATH
+export PATH=$HOME/depot_tools:$HOME/Library/Haskell/bin:$HOME/Code/Scripts/bin:/usr/local/bin:$PATH
 
 # Allow completion
 fpath=(~/.zsh/completion $fpath)
