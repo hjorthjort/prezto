@@ -22,6 +22,6 @@ export HISTTIMEFORMAT="[%F %T] "
 #Plugins
 plugins=(fasd colored-man sudo git)
 
-archey
+archey3
 fortune
 echo
