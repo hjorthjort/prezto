@@ -27,6 +27,6 @@ export LANG=en_US.UTF-8
 # Editors
 #
 
-export EDITOR='mvim'
+export EDITOR='vim'
 export VISUAL='mvim'
 export PAGER='less'
