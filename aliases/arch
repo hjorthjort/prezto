@@ -1,1 +1,2 @@
 alias pacman='pacmatic'
+alias backlight='sudo tee /sys/class/backlight/acpi_video0/brightness <<< '
