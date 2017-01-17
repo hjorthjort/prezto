@@ -1,2 +1,6 @@
 alias pacman='pacmatic'
 alias backlight='sudo tee /sys/class/backlight/acpi_video0/brightness <<< '
+
+function run {
+    "$1" &> /dev/null &
+}
