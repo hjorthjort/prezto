@@ -14,10 +14,6 @@ fi
 # Allow completion
 fpath=(~/.zsh/completion $fpath)
 
-# gitinspector fix: provide locale
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
 #
 # Editors
 #
