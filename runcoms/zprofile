@@ -4,9 +4,6 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# Define where configs folder is
-export CONFIGS=~/Code/configs
-
 #
 # Browser
 #
