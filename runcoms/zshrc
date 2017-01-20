@@ -20,7 +20,7 @@ export HISTFILESIZE=
 export HISTTIMEFORMAT="[%F %T] "
 
 #Plugins
-plugins=(fasd colored-man sudo git)
+plugins=(pacman tmux haskell fasd colored-man sudo git)
 
 archey3
 fortune
