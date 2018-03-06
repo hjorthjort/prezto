@@ -25,3 +25,5 @@ plugins=(pacman tmux haskell fasd colored-man sudo git)
 archey3
 fortune
 echo
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
