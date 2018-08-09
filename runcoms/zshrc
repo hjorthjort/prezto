@@ -22,7 +22,7 @@ export HISTTIMEFORMAT="[%F %T] "
 #Plugins
 plugins=(pacman tmux haskell fasd colored-man sudo git)
 
-archey3
+# archey3 -- disable while python gives errors (2018-08-09)
 fortune
 echo
 
