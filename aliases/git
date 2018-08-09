@@ -2,6 +2,7 @@ alias gcm='git checkout master'
 alias g='git'
 alias gs='git s'
 alias gca='git add . && git commit -m'
+alias gitignore='foo() { langs=`echo $@ | sed "s/ /,/g"` ; curl https://www.gitignore.io/api/$langs }; foo'
 
 # Removes unused branches. Selects all merged, deselcts current (*), master and develop, deletes the rest
 alias gclean='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "develop" | xargs -n 1 git branch -d'

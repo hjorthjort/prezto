@@ -26,6 +26,6 @@ plugins=(pacman tmux haskell fasd colored-man sudo git)
 fortune
 echo
 
-if [ -z $(env | grep TMUX) ]; then
+if [[ -z $(env | grep TMUX) ]]; then
     tmux
 fi
