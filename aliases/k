@@ -1,0 +1,2 @@
+export PATH="$HOME/code/k-fork/k-distribution/target/release/k/bin:"$PATH
+eval `opam config env`

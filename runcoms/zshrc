@@ -29,3 +29,6 @@ echo
 if [[ -z $(env | grep TMUX) ]]; then
     tmux
 fi
+
+# opam configuration
+test -r /home/hjort/.opam/opam-init/init.zsh && . /home/hjort/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
