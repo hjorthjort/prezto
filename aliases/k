@@ -1,2 +1,11 @@
-export PATH="$HOME/code/k-fork/k-distribution/target/release/k/bin:"$PATH
+K_REPO="$HOME/code/k-fork"
+KLAB_REPO="$HOME/code/klab"
+
+export KLAB_K_PATH="$K_REPO/k-distribution/target/release/k/bin"
+export KLAB_EVMS_PATH="$KLAB_REPO/evm-semantics"
+export TMPDIR="/tmp"
+
+export PATH="$KLAB_K_PATH:$PATH"
+export PATH="$KLAB_REPO/bin:$PATH"
+
 eval `opam config env`

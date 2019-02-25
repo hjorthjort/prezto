@@ -1,1 +1,5 @@
 export PATH="$HOME/.cabal/bin:$PATH"
+alias ghci='stack ghci'
+alias ghci-core="ghci -ddump-simpl -dsuppress-idinfo \
+-dsuppress-coercions -dsuppress-type-applications \
+-dsuppress-uniques -dsuppress-module-prefixes"
