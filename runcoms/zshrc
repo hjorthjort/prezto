@@ -5,6 +5,12 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# Spacemacs uses ttys that are not in /dev/tty, so the last clause protects
+# against annoying error messages.
+if [[ "$TMUX" = "" && "$(tty)" != "/dev/tty1" && "$(tty)" == "/dev/tty"* ]]; then
+    exec tmux
+fi
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -21,10 +27,6 @@ export HISTTIMEFORMAT="[%F %T] "
 
 #Plugins
 plugins=(pacman tmux haskell fasd colored-man sudo git)
-
-if [[ -z $(env | grep TMUX) ]]; then
-    tmux
-fi
 
 # opam configuration
 test -r /home/hjort/.opam/opam-init/init.zsh && . /home/hjort/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
