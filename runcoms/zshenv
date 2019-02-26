@@ -14,6 +14,11 @@ fi
 # Allow completion
 fpath=(~/.zsh/completion $fpath)
 
+# Source aliases
+for file in "${ZDOTDIR:-$HOME}/.zprezto/aliases/"* ; do
+  source "$file"
+done
+
 #
 # Editors
 #
