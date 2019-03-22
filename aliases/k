@@ -1,4 +1,4 @@
-K_REPO="$HOME/code/k-fork"
+K_REPO="$HOME/code/wasm/wasm-semantics/.build/k"
 KLAB_REPO="$HOME/code/klab"
 
 export KLAB_K_PATH="$K_REPO/k-distribution/target/release/k/bin"
