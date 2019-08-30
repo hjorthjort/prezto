@@ -53,8 +53,8 @@ function prompt_steeef_setup {
   else
     _prompt_steeef_colors=(
       "%F{cyan}"
+      "%F{white}"
       "%F{yellow}"
-      "%F{magenta}"
       "%F{red}"
       "%F{green}"
     )
