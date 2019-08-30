@@ -1,7 +1,16 @@
 #gitinspector
 alias gspec='~/Code/gitinspector/gitinspector/gitinspector.py'
 alias gspec-report='~/Code/gitinspector/gitinspector/gitinspector.py -F html . > report.html '
+alias tell='notify-send $?'
 
 function listr() {
     find $@ -not -path '*/\.*' -type f
+}
+
+func dec2hex() {
+    echo "obase=16; $1" | bc | tr '[A-Z]' '[a-z]'
+}
+
+func hex2dec() {
+    echo "ibase=16; $(echo $1 | tr '[a-z]' '[A-Z]')" | bc
 }
