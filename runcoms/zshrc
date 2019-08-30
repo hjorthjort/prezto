@@ -7,8 +7,8 @@
 
 # Spacemacs uses the default shell, so the last clause protects
 # against annoying error messages.
-if [[ "$TMUX" = "" && "$(tty)" != "/dev/tty1" && "$(tty)" != "/dev/tty2" && "$TERM" != "screen" && "$TERM" != "dumb" && $INSIDE_EMACS == "" ]]; then
-    exec tmux
+if [[ "$TMUX" = "" && "$(tty)" != "/dev/tty1" && "$(tty)" != "/dev/tty2" && "$TERM" != "dumb" && $INSIDE_EMACS == "" ]]; then
+    exec tmux new-session -A -s "default"
 fi
 
 # Source Prezto.
