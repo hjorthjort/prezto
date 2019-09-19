@@ -9,3 +9,15 @@ export PATH="$KLAB_K_PATH:$PATH"
 export PATH="$KLAB_REPO/bin:$PATH"
 
 eval `opam config env`
+
+func prove() {
+  command="./kwasm klab-prove $1 --def-module KWASM-LEMMAS --format-failures"
+  echo $command
+  eval $command
+}
+
+func view() {
+  command="./kwasm klab-view $1"
+  echo $command
+  eval $command
+}
