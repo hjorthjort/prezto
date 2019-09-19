@@ -31,3 +31,12 @@
   fi
 
 } >&2
+
+
+# Start keychain.
+source $HOME/.keychain/$(whoami)-sh
+keychain
+for pub_file in $(ls $HOME/.ssh/*.pub); do
+    priv_file=${pub_file%.pub}
+    ssh-add $priv_file
+done
