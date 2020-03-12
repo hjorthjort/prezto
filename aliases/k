@@ -1,4 +1,4 @@
-K_REPO="$HOME/code/wasm/polkadot-verification/deps/wasm-semantics/deps/k"
+K_REPO="$HOME/code/wasm/ewasm-semantics/deps/wasm-semantics/deps/k"
 KLAB_REPO="$HOME/code/klab"
 
 export KLAB_K_PATH="$K_REPO/k-distribution/bin"
