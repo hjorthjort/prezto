@@ -1,6 +1,6 @@
 alias ..='cd ..'
 alias e='$EDITOR'
-alias ls='ls -CFGah'
+alias ls='ls -CFGAh'
 alias ll='ls -l'
 # Make sudo work with aliases. A trailing space causes the next word to be
 # checked for alias expanision.

@@ -1,3 +1,0 @@
-# Install Ruby Gems to ~/gems
-export GEM_HOME=$HOME/gems
-export PATH=$HOME/.gem/ruby/2.5.0/bin:$PATH

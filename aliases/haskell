@@ -1,6 +1,0 @@
-export PATH="$HOME/.cabal/bin:$PATH:$HOME/.local/bin"  # The latter is for stack packages.
-ghci () { stack ghci --ghci-options="-dynamic "$@ }
-alias ghci-core="ghci -ddump-simpl -dsuppress-idinfo \
--dsuppress-coercions -dsuppress-type-applications \
--dsuppress-uniques -dsuppress-module-prefixes"
-
