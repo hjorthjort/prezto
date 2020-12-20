@@ -31,3 +31,6 @@ test -r /home/hjort/.opam/opam-init/init.zsh && . /home/hjort/.opam/opam-init/in
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
