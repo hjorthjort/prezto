@@ -24,7 +24,7 @@ export HISTFILESIZE=
 export HISTTIMEFORMAT="[%F %T] "
 
 #Plugins
-plugins=(pacman tmux haskell fasd colored-man sudo git)
+plugins=(pacman tmux haskell fasd colored-man sudo git environment emacs gpg python rsync screen ssh tmux)
 
 # opam configuration
 test -r /home/hjort/.opam/opam-init/init.zsh && . /home/hjort/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
@@ -33,4 +33,4 @@ test -r /home/hjort/.opam/opam-init/init.zsh && . /home/hjort/.opam/opam-init/in
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
-export SSH_AUTH_SOCK
+export SSH_AUTH_SOCK  
